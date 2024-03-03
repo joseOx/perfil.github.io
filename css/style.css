@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-color: #2f2fa0;
+    --background-color2: rgb(200, 228, 252);
+    --accent-color: rgb(192, 23, 93);
+    --accent-color2: rgb(209, 65, 65);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper, .portfolio {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    color:var(--background-color2);
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu .active {
+    color: var(--accent-color2);
+}
+
+.menu a:hover {
+    background-color: var(--accent-color);
+    color:var(--background-color) ;
+    transition: ease-in 0.35s;
+    border-radius: 30px;
+}
+
+.menu a {
+    color: var(--background-color2);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.brand {
+    margin-top: -8px;
+    margin-left: -4rem;
+}
+
+.brand span {
+    color: var(--accent-color2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.h1 {
+    font-size: 3em;
+
+}
+
+span {
+    color: var(--accent-color2);
+}
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(32, 231, 185);
+}
+
+.download-cv:hover {
+    background-color: var(--background-color2);
+    box-shadow: none;
+}
+
+.main img {
+    width: 400px;
+    border: 7px solid var(--accent-color);
+    height: 700px;
+    border-radius: 10px;
+}
+
+.info-content {
+    align-items: center;
+    align-self: center;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-info {
+    grid-column: 5/10;
+    padding: 2em;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    color: var(--background-color);
+}
+
+.divider {
+    height: 4px;
+    width: 200px;
+    background-color: var(--accent-color2);
+    margin-top: 10px;
+    margin-bottom: 1.5em;
+    transition: width 0.3s ease-in-out; 
+}
+
+.about-info:hover .divider {
+    width: 300px; 
+}
+
+.about p {
+    margin-bottom: 1em;
+}
+
+.portfolio-headings:hover .divider {
+    width: 300px;
+}
+
+.portfolio-headings {
+    width: 100vw;
+    padding: 5em;
+}
+
+.portfolio-headings h2 {
+    font-size: 2.5em;
+}
+
+.portfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: var(--accent-color);
+    margin: 1em;
+}
+
+.card__img {
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/imagen.jpg);
+    background-size: cover;
+}
+
+.card__title {
+    padding: 20px;
+}
+
+.projects-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects-links a {
+    color: var(--background-color2);
+    text-decoration: none;
+}
+
+.projects-links i {
+    font-size: 1.5em;
+}
+
+.card .projects-details {
+    margin: 0 auto;
+    width: 70%;
+    
+}
+
+.card .projects-details a {
+    text-decoration: none;
+    color: var(--background-color);
+    text-transform: uppercase;
+}
+
+.projects-details-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.contact-section {
+    padding: 3em;
+    margin: 0 auto;
+}
+
+.container-contact {
+    display: flex;
+}
+
+.container-contact img {
+    width: 750px;
+    height: 700px;
+    bottom: 0;
+}
+
+.contact-form {
+    padding: 3em;
+}
+
+.contact-form:hover .divider {
+    width: 300px;
+}
+
+.contact-headings h2 {
+    font-size: 3em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border-bottom: 1px solid white;
+    color: var(--accent-color);
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    color: var(--accent-color);
+    padding: 1.5em;
+    border-bottom: 1px solid white;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(32, 231, 185);
+    border-radius: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: var(--accent-color2);
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 3em;
+}
+
+.footer-content h5 {
+    font-size: 1.5em;
+}
+
+.sotial-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.sotial-network i {
+    font-size: 1.5em;
+}
