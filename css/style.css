@@ -18,6 +18,11 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper, .portfolio {
     width: 100vw;
     height: 100vh;
@@ -100,9 +105,7 @@ span {
 }
 
 .main img {
-    width: 400px;
     border: 7px solid var(--accent-color);
-    height: 700px;
     border-radius: 10px;
 }
 
@@ -135,7 +138,7 @@ span {
 
 .divider {
     height: 4px;
-    width: 200px;
+    width: 12.5rem;
     background-color: var(--accent-color2);
     margin-top: 10px;
     margin-bottom: 1.5em;
@@ -168,7 +171,8 @@ span {
     height: 80vh;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Distribuir los cards equitativamente */
+    flex-wrap: wrap;
 }
 
 .card {
@@ -232,8 +236,8 @@ span {
 }
 
 .container-contact img {
-    width: 750px;
-    height: 700px;
+    width: 100%;
+    height: 150px;
     bottom: 0;
 }
 
@@ -242,7 +246,7 @@ span {
 }
 
 .contact-form:hover .divider {
-    width: 300px;
+    width: 25%;
 }
 
 .contact-headings h2 {
@@ -311,4 +315,41 @@ span {
 
 .sotial-network i {
     font-size: 1.5em;
+}
+
+/* responsive */
+/* Aplicar estilos específicos para pantallas más pequeñas utilizando media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
+        align-items: center; /* Centrar los cards */
+        overflow-x: auto;
+    }
+
+    .card {
+        width: calc(100% - 2em); /* Ancho completo menos el espacio del margen */
+        margin-bottom: 1em; /* Espacio entre los cards */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-contact {
+        flex-direction: column; /* Cambiar a disposición de columna en pantallas más pequeñas */
+        align-items: center; /* Centrar las tarjetas */
+    }
+
+    .contact-form {
+        width: 100%; /* Ancho completo en pantallas más pequeñas */
+        margin-bottom: 1em; /* Espacio entre las tarjetas */
+    }
+    .container-contact img {
+        width: 100%; /* Ancho completo en pantallas más pequeñas */
+        margin-bottom: 1em; /* Espacio entre las tarjetas */
+    }
+    .portfolio{
+        padding: 5%; /* Espacio interno */
+    }
+    .portfolio-headings{
+        padding: 1em;
+    }
 }
