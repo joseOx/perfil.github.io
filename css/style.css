@@ -45,6 +45,7 @@ img {
     background-color: var(--background-color3);
     color:var(--background-color) ;
     border-radius: 30px;
+    box-shadow: 1px 3px 11px -5px rgb(32, 231, 185);
 }
 
 .menu a:hover {
@@ -368,6 +369,7 @@ span {
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.5fr; /* Dos filas automáticas */
         justify-items: center;
+        align-items: center;
         grid-template-areas:
             "image"
             "text";
