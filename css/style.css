@@ -396,4 +396,20 @@ span {
         margin: 5px ;
     }
 }
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambiar la dirección de la fila a columna */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+    }
+
+    .menu {
+        order: 2; /* Cambiar el orden del menú */
+    }
+
+    .brand {
+        order: 1; /* Cambiar el orden del elemento .brand */
+        margin-left: auto; /* Mover el elemento .brand hacia la derecha */
+    }
+}
 
