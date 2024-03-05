@@ -366,7 +366,7 @@ span {
     .main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto; /* Dos filas automáticas */
+        grid-template-rows: 0.5fr 0.5fr; /* Dos filas automáticas */
         justify-items: center;
         grid-template-areas:
             "image"
@@ -410,6 +410,13 @@ span {
     .brand {
         order: 1; /* Cambiar el orden del elemento .brand */
         margin-left: auto; /* Mover el elemento .brand hacia la derecha */
+    }
+    .menu {
+        position: fixed; /* Establecer la posición fija */
+        top: 40px; /* Alinear el menú en la parte superior */
+        left: 0;
+        width: 40%; /* Asegurar que el menú ocupe todo el ancho */
+        z-index: 1000; /* Ajustar la superposición para asegurar que el menú esté encima de otros elementos */
     }
 }
 
