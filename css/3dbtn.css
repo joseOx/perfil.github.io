@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+.menu {
+    width: 300px;
+}
+    .menu a{
+    background:#3d4442;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    width: 150px;
+  }
+  .menu a:hover{
+    background:#fff;
+    color:#3d4442;
+  }
+  .menu a:before,.menu a:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #3d4442;
+    transition:400ms ease all;
+  }
+  .menu a:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .menu a:hover:before,.menu a:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .li {
+    width: 100px;
+  }
+  menu a span {
+    visibility: hidden;
+  }
+}
+  

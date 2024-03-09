@@ -342,6 +342,18 @@ span {
         width: calc(100% - 2em); /* Ancho completo menos el espacio del margen */
         margin-bottom: 1em; /* Espacio entre los cards */
     }
+    .portfolio-headings:hover .divider {
+        width: 200px;
+    }
+    .portfolio-headings h2 {
+        font-size: 2.5em;
+    }
+    .portfolio{
+        padding: none; /* Espacio interno */
+    }
+    .portfolio-headings{
+        padding: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -357,12 +369,6 @@ span {
     .container-contact img {
         width: 100%; /* Ancho completo en pantallas más pequeñas */
         margin-bottom: 1em; /* Espacio entre las tarjetas */
-    }
-    .portfolio{
-        padding: 5%; /* Espacio interno */
-    }
-    .portfolio-headings{
-        padding: 1em;
     }
     .main {
         display: grid;
@@ -387,7 +393,7 @@ span {
 @media screen and (max-width: 768px) {
     .menu {
         display: grid;
-        grid-gap: 1.5em;
+        grid-gap: 0.2em;
         width: 50%;
         justify-content: space-around;
     } 
@@ -421,3 +427,4 @@ span {
         z-index: 1000; /* Ajustar la superposición para asegurar que el menú esté encima de otros elementos */
     }
 }
+
